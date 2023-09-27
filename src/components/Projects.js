@@ -11,34 +11,22 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Fruit Shop Web",
+      description: "E-Commerce App",
       imgUrl: projImg1,
+      link:"https://www.figma.com/file/M4JohIoy2qtbOmlboSOiCT/FRUIT-SHOP-WEB?type=design&node-id=0%3A1&t=65Tibi9TOVyComiO-1"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Book My show",
+      description: "Booking App",
       imgUrl: projImg2,
+      link:" https://www.figma.com/file/ct1ABulawqIbvuJUrHdvJm/Book-my-Show?type=design&t=65Tibi9TOVyComiO-1"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "SPECSKART",
+      description: "E-Commerce App",
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      link:"https://www.figma.com/file/zx72MDNq7Ipw6Jy6k7ovhG/SpecsKart?type=design&t=65Tibi9TOVyComiO-1"
     },
   ];
 
@@ -51,8 +39,9 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                <br></br>
+                {/* <p>Creating captivating user interfaces that blend artistry and usability. Crafting digital experiences that engage and inspire.</p> */}
+                {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -65,7 +54,7 @@ export const Projects = () => {
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="first"> */}
                       <Row>
                         {
                           projects.map((project, index) => {
@@ -78,7 +67,7 @@ export const Projects = () => {
                           })
                         }
                       </Row>
-                    </Tab.Pane>
+                    {/* </Tab.Pane>
                     <Tab.Pane eventKey="section">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
@@ -86,7 +75,7 @@ export const Projects = () => {
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                   </Tab.Content>
-                </Tab.Container>
+                </Tab.Container> */}
               </div>}
             </TrackVisibility>
           </Col>

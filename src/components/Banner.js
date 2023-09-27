@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = ["UI/UX Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -57,8 +57,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Yazeer`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>"Unlocking the Digital World's Beauty: Meet the UI/UX Designer! 🎨✨
-Crafting seamless digital experiences, they blend artistry with functionality. With every pixel, they paint a world where user journeys are intuitive, and interfaces are as captivating as they are efficient. Merging creativity and user psychology, they sculpt designs that leave lasting impressions. Elevate your digital presence with a UI/UX Designer and watch your vision come to life!"
+                  <p>"Step into a world where pixels tell stories and interfaces come to life. Each project is a symphony of creativity and user-centric design, a testament to my passion for crafting unforgettable digital journeys. Explore a mosaic of innovation, where every click, swipe, and interaction is a work of art. Welcome to my portfolio, where I transform ideas into immersive digital realities."
 </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
